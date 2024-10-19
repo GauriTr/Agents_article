@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "agent_article"
+name = "webportcrew"
 version = "0.1.0"
-description = "agent_article using crewAI"
+description = "webportcrew using crewAI"
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
@@ -10,11 +10,11 @@ crewai = { extras = ["tools"], version = ">=0.70.1,<1.0.0" }
 
 
 [tool.poetry.scripts]
-agent_article = "agent_article.main:run"
-run_crew = "agent_article.main:run"
-train = "agent_article.main:train"
-replay = "agent_article.main:replay"
-test = "agent_article.main:test"
+webportcrew = "webportcrew.main:run"
+run_crew = "webportcrew.main:run"
+train = "webportcrew.main:train"
+replay = "webportcrew.main:replay"
+test = "webportcrew.main:test"
 
 [build-system]
 requires = ["poetry-core"]

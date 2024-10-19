@@ -2,14 +2,14 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
 # Uncomment the following line to use an example of a custom tool
-# from agent_article.tools.custom_tool import MyCustomTool
+# from webportcrew.tools.custom_tool import MyCustomTool
 
 # Check our tools documentations for more information on how to use them
 # from crewai_tools import SerperDevTool
 
 @CrewBase
-class AgentArticleCrew():
-	"""AgentArticle crew"""
+class WebportcrewCrew():
+	"""Webportcrew crew"""
 
 	@agent
 	def researcher(self) -> Agent:
@@ -41,7 +41,7 @@ class AgentArticleCrew():
 
 	@crew
 	def crew(self) -> Crew:
-		"""Creates the AgentArticle crew"""
+		"""Creates the Webportcrew crew"""
 		return Crew(
 			agents=self.agents, # Automatically created by the @agent decorator
 			tasks=self.tasks, # Automatically created by the @task decorator
